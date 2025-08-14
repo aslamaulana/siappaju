@@ -3,7 +3,7 @@
 	<a href="index3.html" class="brand-link" style="text-align: center;">
 		<div class="image">
 			<img src="<?= base_url('/toping/material/logo.png'); ?>" alt="AdminLTE Logo" style="width: -webkit-fill-available;max-width: 40px;margin-left: .8rem;">
-			<span class="brand-text font-weight-light" style="font-family: monospace;" title="Sistem Informasi Pengendalian dan Evaluasi Kinerja Pembangunan Daerah"> SIAPPaJu</span>
+			<span class="brand-text font-weight-light" style="font-family: monospace;" title="Sistem Informasi Pengendalian dan Evaluasi Kinerja Pembangunan Daerah"> SIPESHAT</span>
 		</div>
 		<!-- <img src="<?= base_url('/toping/material/logo.png'); ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
 	</a>

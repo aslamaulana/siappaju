@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Siappaju</title>
+	<title>Sipeshat</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -44,13 +44,13 @@
 
 							<div class="d-flex">
 								<div class="w-100 text-center">
-									<h3>SIAPPAJU<a href="https://www.instagram.com/rinovachandra/">.</a></h3>
+									<h3>SIPESHAT<a href="https://www.instagram.com/rinovachandra/">.</a></h3>
 								</div>
 							</div>
 							<div class="d-flex">
 								<div class="w-100">
 									<p class="social-media d-flex text-center font-italic">
-										<!-- "Sistem Informasi Pengendalian dan Evaluasi Kinerja Pembangunan Daerah" -->
+										"Sistem Informasi Penyusunan Standar Harga Terpadu"
 										<!-- <a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
 										<a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a> -->
 									</p>
