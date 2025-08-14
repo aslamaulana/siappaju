@@ -4,52 +4,52 @@
 <link rel="stylesheet" href="<?= base_url('/toping/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') ?>">
 <style>
 	.c0 {
-		width: 5px;
+		width: 5px !important;
 		text-align: center;
 	}
 
 	.c1 {
-		width: 50px;
+		width: 50px !important;
 		text-align: center;
 	}
 
 	.c2 {
-		width: 150px;
+		width: 150px !important;
 	}
 
 	.c2a {
-		width: 300px;
+		width: 300px !important;
 	}
 
 	.c3 {
-		width: 300px;
+		width: 300px !important;
 	}
 
 	.c4 {
-		width: 450px;
+		width: 450px !important;
 	}
 
 	.c5 {
-		width: 550px;
+		width: 550px !important;
 	}
 
 	.c6 {
-		width: 90px;
+		width: 90px !important;
 		text-align: center;
 	}
 
 	.c7 {
-		width: 150px;
+		width: 160px !important;
 		text-align: center;
 	}
 
 	.c8 {
-		width: 80px;
+		width: 80px !important;
 		text-align: center;
 	}
 
 	.c9 {
-		width: 150px;
+		width: 150px !important;
 		text-align: center;
 	}
 </style>
@@ -131,7 +131,7 @@
 		<button id="btn-tolak" class="btn btn-danger btn-sm">Tolak</button>
 	</div>
 
-	<table id="example2" class="table table-bordered display nowrap table-sm" cellspacing="0">
+	<table id="example1" class="table table-bordered display nowrap table-sm" cellspacing="0">
 		<thead>
 			<tr style="background: antiquewhite;">
 				<th class="c0"><input type="checkbox" id="check-all"></th>
@@ -167,24 +167,24 @@
 					<input type="hidden" name="created_at[<?= $index ?>]" value="<?= $row['created_at'] ?>" class="created_at">
 					<input type="hidden" name="updated_at[<?= $index ?>]" value="<?= $row['updated_at'] ?>" class="updated_at">
 					<input type="hidden" name="updated_by[<?= $index ?>]" value="<?= $row['updated_by'] ?>" class="updated_by">
-					<td class="align-top text-center">
+					<td class="c0 align-top text-center">
 						<?php if (!empty($jawab) && in_array($jawab->verifikasi, ['diajukan', 'edit'])): ?>
 							<input type="checkbox" class="row-check" value="<?= $row['id_ssh'] ?>">
 						<?php else: ?>
 							<input type="checkbox" class="row-check" disabled>
 						<?php endif ?>
 					</td>
-					<td class="align-top text-center"><?= $nomor++; ?></td>
-					<td class="align-top">
+					<td class="c1 align-top text-center"><?= $nomor++; ?></td>
+					<td class="c4 align-top">
 						<?= $row['keterangan'] == '1' ? "<b>[Data Acuan]</b> " : ""; ?>
 						<?= $row['komponen']; ?></td>
-					<td class="align-top"><?= $row['spesifikasi']; ?></td>
-					<td class="align-top text-center"><?= $row['satuan']; ?></td>
-					<td class="align-top text-right"><?= 'Rp' . number_format($row['harga'], 2, ',', '.'); ?></td>
+					<td class="c5 align-top"><?= $row['spesifikasi']; ?></td>
+					<td class="c6 align-top text-center"><?= $row['satuan']; ?></td>
+					<td class="c7 align-top text-right"><?= 'Rp' . number_format($row['harga'], 2, ',', '.'); ?></td>
 					<td class="c8 align-top"><?= $row['tkdn']; ?></td>
 					<td class="c8 align-top"><?= $row['kelompok']; ?></td>
 					<!-- ------------------------------------------------------------------------------------ -->
-					<td class="align-top text-center">
+					<td class="c1 align-top text-center">
 						<div class="d-flex justify-content-center">
 							<button type="button"
 								class="btn btn-info btn-circle btn-xs detailBtn"
@@ -195,7 +195,7 @@
 							</button>
 						</div>
 					</td>
-					<td class="align-top text-center">
+					<td class="c9 align-top text-center">
 						<!-- ------------------------------------------------------------------------------------------- -->
 						<div class="d-flex justify-content-center">
 							<?php if (isset($jawab)) : ?>
@@ -826,9 +826,9 @@
 			"stateSave": true // WAJIB
 		});
 		$('#example2').DataTable({
-			"scrollX": true,
-			"scrollY": '65vh',
-			"scrollCollapse": true,
+			// "scrollX": false,
+			// "scrollY": '65vh',
+			// "scrollCollapse": true,
 			"paging": true,
 			"responsive": false,
 			"autoWidth": false,

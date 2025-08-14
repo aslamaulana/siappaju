@@ -12,3 +12,5 @@ writable/uploads/*
 public/FileBerkasData/*
 !public/FileBerkasData/index.html
 public/comingsoon_03/
+
+.env

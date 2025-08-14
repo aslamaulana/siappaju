@@ -435,6 +435,24 @@
 <script src="<?= base_url('/toping/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') ?>"></script>
 
 <script>
+	// Override penyimpanan state DataTables → sessionStorage
+	$.fn.dataTable.ext.state.save = function(settings, data) {
+		try {
+			sessionStorage.setItem(
+				'DataTables_' + settings.sInstance,
+				JSON.stringify(data)
+			);
+		} catch (e) {
+			console.warn('Gagal menyimpan state DataTables:', e);
+		}
+	};
+
+	$.fn.dataTable.ext.state.load = function(settings) {
+		let data = sessionStorage.getItem('DataTables_' + settings.sInstance);
+		return data ? JSON.parse(data) : null;
+	};
+</script>
+<script>
 	$(function() {
 		bsCustomFileInput.init();
 	});
