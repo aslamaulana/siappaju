@@ -1,3 +1,14 @@
-writable/
-public/FileBerkasData/
+writable/cache/*
+!writable/cache/*.html
+writable/debugbar/*
+!writable/debugbar/*.gitkeep
+writable/logs/*
+!writable/logs/*.html
+writable/session/*
+!writable/session/*.html
+writable/uploads/*
+!writable/uploads/*.html
+
+public/FileBerkasData/*
+!public/FileBerkasData/index.html
 public/comingsoon_03/
